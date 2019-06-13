@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="413.0" style="-fx-background-color: #20B2AA;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ongdospeludos.AdicionarAnimalController">
+    <stylesheets>
+        <URL value="@adicionaranimal.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="82.0" prefHeight="405.0" prefWidth="426.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Button fx:id="cancelarButton" layoutX="22.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancelarButton" text="Cancelar">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="concluirButton" layoutX="332.0" layoutY="358.0" mnemonicParsing="false" text="Concluir">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="castradoRadioButton" layoutX="20.0" layoutY="274.0" mnemonicParsing="false" text="Castrado" textFill="WHITE" />
+            <ComboBox fx:id="tipoCBox" layoutX="67.0" layoutY="49.0" onAction="#tipoCBox" prefWidth="150.0" />
+            <Label layoutX="23.0" layoutY="53.0" text="Tipo:" textFill="WHITE" />
+            <Label layoutX="23.0" layoutY="87.0" text="Nome:" textFill="WHITE" />
+            <TextField fx:id="nomeTextField" layoutX="67.0" layoutY="83.0" prefHeight="25.0" prefWidth="150.0" />
+            <ImageView fx:id="fotoImageView" fitHeight="187.0" fitWidth="168.0" layoutX="238.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="porteCBox" layoutX="67.0" layoutY="152.0" prefWidth="150.0" />
+            <Label layoutX="21.0" layoutY="156.0" text="Porte:" textFill="WHITE" />
+            <Label layoutX="22.0" layoutY="122.0" text="Raça:" textFill="WHITE" />
+            <ComboBox fx:id="racaCBox" layoutX="67.0" layoutY="118.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="21.0" layoutY="227.0" text="Idade:" textFill="WHITE" />
+            <TextField fx:id="idadeTextField" layoutX="68.0" layoutY="223.0" />
+            <ComboBox fx:id="sexoCBox" layoutX="67.0" layoutY="190.0" prefWidth="150.0" />
+            <Label layoutX="23.0" layoutY="194.0" text="Sexo:" textFill="WHITE" />
+            <Button fx:id="addFotoButton" layoutX="271.0" layoutY="24.0" mnemonicParsing="false" onAction="#addFotoButton" text="Adicionar foto" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="66.0" prefWidth="426.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Label layoutX="104.0" layoutY="6.0" prefHeight="54.0" prefWidth="219.0" text="Adicionar animal" textAlignment="CENTER" textFill="TURQUOISE">
+               <font>
+                  <Font name="Staatliches Regular" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

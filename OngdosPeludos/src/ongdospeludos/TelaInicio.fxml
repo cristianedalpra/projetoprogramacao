@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="425.0" style="-fx-background-color: #20B2AA;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ongdospeludos.TelaInicioController">
+    <stylesheets>
+        <URL value="@telainicio.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="81.0" prefHeight="437.0" prefWidth="425.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <TextField layoutX="123.0" layoutY="255.0" opacity="0.48" prefHeight="25.0" prefWidth="180.0" />
+            <Button fx:id="registrarButton" layoutX="144.0" layoutY="368.0" mnemonicParsing="false" opacity="0.79" style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-color: white;" text="Registrar-se" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="entrarButton" layoutX="173.0" layoutY="294.0" mnemonicParsing="false" onAction="#entrarButton" opacity="0.79" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-color: white; -fx-border-radius: 20 20 20 20;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+            <Label layoutX="123.0" layoutY="236.0" prefHeight="19.0" prefWidth="63.0" text="Senha" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="123.0" layoutY="198.0" opacity="0.48" prefHeight="25.0" prefWidth="180.0" />
+            <Label layoutX="123.0" layoutY="179.0" prefHeight="19.0" prefWidth="80.0" text="Usuário" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="148.0" layoutY="30.0">
+               <image>
+                  <Image url="@../imagens/siberian-husky.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="105.0" layoutY="368.0">
+               <image>
+                  <Image url="@../imagens/medal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="288.0" layoutY="368.0">
+               <image>
+                  <Image url="@../imagens/medal.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="66.0" prefWidth="425.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Label fx:id="titulo" layoutX="104.0" layoutY="1.0" prefHeight="65.0" prefWidth="217.0" text="ONG dos Peludos" textFill="TURQUOISE">
+               <font>
+                  <Font name="Staatliches Regular" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ongdospeludos.VisualizarAnimalController">
+    <stylesheets>
+        <URL value="@visualizaranimal.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="nomeLabel" layoutX="251.0" layoutY="29.0" text="Nome">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="tipoLabel" layoutX="153.0" layoutY="107.0" text="Tipo" />
+      <Label fx:id="porteLabel" layoutX="151.0" layoutY="142.0" text="Porte" />
+      <Label fx:id="idadeLabel" layoutX="151.0" layoutY="183.0" text="Idade" />
+      <Label fx:id="sexoLabel" layoutX="151.0" layoutY="229.0" text="Sexo" />
+      <Label fx:id="castradoLabel" layoutX="142.0" layoutY="269.0" text="Castrado" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="voltarButton" layoutX="199.0" layoutY="335.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="editarButton" layoutX="349.0" layoutY="335.0" mnemonicParsing="false" text="Editar" />
+   </children>
+</AnchorPane>

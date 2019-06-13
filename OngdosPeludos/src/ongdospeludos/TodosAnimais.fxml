@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="425.0" style="-fx-background-color: #20B2AA;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ongdospeludos.TodosAnimaisController">
+    <stylesheets>
+        <URL value="@todosanimais.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="80.0" prefHeight="438.0" prefWidth="425.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <ListView fx:id="animaisListView" layoutX="141.0" layoutY="83.0" prefHeight="273.0" prefWidth="261.0" />
+            <ComboBox fx:id="tipoCBox" layoutX="21.0" layoutY="107.0" opacity="0.8" prefHeight="25.0" prefWidth="105.0" promptText="Espécie" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <ComboBox fx:id="idadeCBox" layoutX="21.0" layoutY="307.0" opacity="0.8" prefHeight="25.0" prefWidth="105.0" promptText="Idade" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <Button fx:id="addAnimalButton" layoutX="267.0" layoutY="381.0" mnemonicParsing="false" onAction="#addAnimalButton" prefHeight="25.0" prefWidth="134.0" text="Adicionar animal">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nomePesquisa" layoutX="141.0" layoutY="35.0" opacity="0.59" prefHeight="25.0" prefWidth="156.0" />
+            <ComboBox fx:id="porteCBox" layoutX="21.0" layoutY="207.0" opacity="0.8" prefHeight="25.0" prefWidth="105.0" promptText="Porte" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <ComboBox fx:id="racaCBox" layoutX="21.0" layoutY="158.0" opacity="0.8" prefHeight="25.0" prefWidth="105.0" promptText="Raça" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <RadioButton fx:id="castradoRadioButton" layoutX="307.0" layoutY="39.0" mnemonicParsing="false" text="Castrado" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="13.0" />
+               </font>
+            </RadioButton>
+            <ComboBox fx:id="sexoCBox" layoutX="21.0" layoutY="258.0" opacity="0.8" prefHeight="25.0" prefWidth="105.0" promptText="Sexo" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Turquoise; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <Button fx:id="voltarButton" layoutX="21.0" layoutY="382.0" mnemonicParsing="false" onAction="#voltarButton" text="Voltar">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="66.0" prefWidth="425.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Label layoutX="104.0" layoutY="6.0" prefHeight="54.0" prefWidth="217.0" text="ONG dos Peludos" textFill="TURQUOISE">
+               <font>
+                  <Font name="Staatliches Regular" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ongdospeludos.EditarAnimalController">
+    <stylesheets>
+        <URL value="@editaranimal.css" />
+    </stylesheets>
+   <children>
+      <ComboBox fx:id="racaCBox" layoutX="92.0" layoutY="180.0" prefWidth="150.0" />
+      <ComboBox fx:id="sexoCBox" layoutX="91.0" layoutY="296.0" prefWidth="150.0" />
+      <ComboBox fx:id="porteCBox" layoutX="92.0" layoutY="217.0" prefWidth="150.0" />
+      <ComboBox fx:id="tipoCBox" layoutX="91.0" layoutY="104.0" onAction="#tipoCBox" prefWidth="150.0" />
+      <Button fx:id="cancelarButton" layoutX="15.0" layoutY="364.0" mnemonicParsing="false" onAction="#cancelarButton" text="Cancelar" />
+      <Button fx:id="concluirButton" layoutX="525.0" layoutY="364.0" mnemonicParsing="false" text="Concluir" />
+      <Label layoutX="50.0" layoutY="108.0" text="Tipo:" />
+      <Button fx:id="addFotoButton" layoutX="387.0" layoutY="116.0" mnemonicParsing="false" onAction="#addFotoButton" text="Adicionar foto" />
+      <ImageView fx:id="fotoImageView" fitHeight="150.0" fitWidth="200.0" layoutX="333.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="idadeTextField" layoutX="92.0" layoutY="255.0" />
+      <TextField fx:id="nomeTextField" layoutX="92.0" layoutY="142.0" />
+      <RadioButton fx:id="castradoRadioButton" layoutX="132.0" layoutY="330.0" mnemonicParsing="false" text="Castrado" />
+      <Label layoutX="47.0" layoutY="300.0" text="Sexo:" />
+      <Label layoutX="45.0" layoutY="259.0" text="Idade:" />
+      <Label layoutX="47.0" layoutY="221.0" text="Porte:" />
+      <Label layoutX="47.0" layoutY="184.0" text="Raça:" />
+      <Label layoutX="47.0" layoutY="146.0" text="Nome:" />
+      <Label layoutX="194.0" layoutY="40.0" text="Editar Animal">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
