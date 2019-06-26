@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="413.0" style="-fx-background-color: #20B2AA;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ongdospeludos.AdicionarAnimalController">
+    <stylesheets>
+        <URL value="@adicionaranimal.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="80.0" prefHeight="439.0" prefWidth="426.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Button fx:id="cancelarButton" layoutX="30.0" layoutY="382.0" mnemonicParsing="false" onAction="#cancelarButton" style="-fx-background-color: #1C1C1C; -fx-border-color: white; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="concluirButton" layoutX="322.0" layoutY="382.0" mnemonicParsing="false" onAction="#concluirButton" style="-fx-background-color: #1C1C1C; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" text="Concluir" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="especieCBox" layoutX="68.0" layoutY="47.0" onAction="#especieCBox" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: Turquoise; -fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20; -fx-border-color: white;" />
+            <Label layoutX="12.0" layoutY="53.0" prefHeight="15.0" prefWidth="51.0" text="Espécie" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <Label layoutX="23.0" layoutY="293.0" prefHeight="15.0" prefWidth="29.0" text="Nome" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="nomeTextField" layoutX="69.0" layoutY="288.0" opacity="0.7" prefHeight="25.0" prefWidth="150.0" style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20;" />
+            <ImageView fx:id="fotoImageView" fitHeight="226.0" fitWidth="168.0" layoutX="238.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="porteCBox" layoutX="69.0" layoutY="144.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: Turquoise; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <Label layoutX="18.0" layoutY="150.0" prefHeight="15.0" prefWidth="39.0" text="Porte" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <Label layoutX="23.0" layoutY="103.0" prefHeight="15.0" prefWidth="29.0" text="Raça" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="raçaCBox" layoutX="69.0" layoutY="97.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: Turquoise; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <Label layoutX="18.0" layoutY="257.0" prefHeight="15.0" prefWidth="39.0" text="Idade" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="idadeTextField" layoutX="70.0" layoutY="252.0" opacity="0.7" style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20;" />
+            <ComboBox fx:id="sexoCBox" layoutX="68.0" layoutY="192.0" prefWidth="150.0" style="-fx-background-color: Turquoise; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" />
+            <Label layoutX="23.0" layoutY="198.0" prefHeight="15.0" prefWidth="29.0" text="Sexo" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <Button fx:id="addFotoButton" layoutX="274.0" layoutY="24.0" mnemonicParsing="false" onAction="#addFotoButton" style="-fx-background-color: #1C1C1C; -fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-border-color: white;" text="Adicionar foto" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <ToggleSwitch fx:id="castradoToggleSwitch" layoutX="119.0" layoutY="334.0" prefHeight="18.0" prefWidth="99.0" textFill="WHITE" />
+            <Label layoutX="115.0" layoutY="336.0" prefHeight="15.0" prefWidth="59.0" text="Castrado" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="66.0" prefWidth="426.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Label fx:id="tituloLabel" layoutX="76.0" layoutY="5.0" prefHeight="57.0" prefWidth="274.0" text="Adicionar animal" textAlignment="CENTER" textFill="TURQUOISE">
+               <font>
+                  <Font name="Staatliches Regular" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
